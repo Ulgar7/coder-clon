@@ -38,6 +38,14 @@ h3 a{
     color: black;
 }
 
+.header__container h3 a:hover::after{
+    content:'inicio';
+    font-size: 16px;
+    margin-left: 5px;
+    color: #e2e8f0;
+
+}
+
 nav ul li a{
     text-decoration: none;
     color: white;
@@ -102,6 +110,11 @@ ul{
     padding: 15px 30px;
 }
 
+.hero__container-info a:hover{
+    background-color: black;
+}
+
+
 .heroContainer video{
     width: 100%;
     border-radius: 10px;
@@ -141,6 +154,10 @@ ul{
     text-decoration: none;
 }
 
+.card__link:hover{
+    background-color: gold;
+}
+
 .card__header img{
     width: 100%;
     border-radius: 10px;
@@ -176,6 +193,7 @@ ul{
 @media (min-width: 768px){
     .header__container-navbar{
         display: flex;
+        align-items: center;
     }
     .header__container-navbar-mobile{
         display: none;
@@ -184,6 +202,17 @@ ul{
     .heroContainer {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
+    }
+
+    .header__container-navbar li a:hover{
+        color: black;
+    }
+
+    .header__container-navbar li:last-child {
+        border: 1px solid black;
+        margin-left: 0px;
+        padding: 10px;
+        border-radius: 10px;
     }
 }
 
